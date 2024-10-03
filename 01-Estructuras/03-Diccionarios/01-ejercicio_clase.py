@@ -32,7 +32,7 @@ fruits = {
 }
 
 # Solicitar El Nombre De Una Fruta Por Consola
-name_fruit = input('Ingrese El Nombre De Una Fruta: ')
+name_fruit = input('Ingrese El Nombre De Una Fruta: ').lower()
 
 # Validar Si La Fruta Existe En El Diccionario
 if name_fruit in fruits.keys():
@@ -45,4 +45,5 @@ if name_fruit in fruits.keys():
     # Mostrar Información Final Por Consola
     print(f'El Precio Total De La Compra Es: {price}')
 else:
+    # Mostrar Información Final Por Consola
     print('La Fruta Ingresada No Existe En El Sistema.')
