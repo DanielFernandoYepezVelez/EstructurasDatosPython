@@ -6,7 +6,6 @@
     Mostrar claves y su valor correspondiente. 
 """
 """
-
 # Solicitar un número al usuario
 numero = int(input("Ingresa un número: "))
 
@@ -18,32 +17,17 @@ diccionario = {
 # Mostrar claves y sus valores correspondientes
 for clave, valor in diccionario.items():
     print(f"{clave}: {valor}")
-
 """
+# Definir E Iniciarlizar Un Diccionario
+number_dict = {}
 
-# Definir E Inicializar Un Diccionario
-fruits = {
-    'manzana': 2000,
-    'pera': 1500,
-    'naranja': 1800,
-    'uva': 3000,
-    'kiwi': 2500,
-    'mango': 2200,
-}
+# Solicitar un número al usuario
+number = int(input("Ingresa un número: "))
 
-# Solicitar El Nombre De Una Fruta Por Consola
-name_fruit = input('Ingrese El Nombre De Una Fruta: ').lower()
+# Estructura Cíclica Para O For
+for i in range(1, number + 1, 1):
+    number_dict[i] = i ** 3
 
-# Validar Si La Fruta Existe En El Diccionario
-if name_fruit in fruits.keys():
-    # Solicitar La Cantidad De La Fruta Por Consola
-    quantity = int(input('Ingrese La Cantidad Que Desea Comprar: '))
-
-    # Procesos Aritméticos
-    price = quantity * fruits[name_fruit]
-    
-    # Mostrar Información Final Por Consola
-    print(f'El Precio Total De La Compra Es: {price}')
-else:
-    # Mostrar Información Final Por Consola
-    print('La Fruta Ingresada No Existe En El Sistema.')
+# Mostrar claves y sus valores correspondientes
+for clave, valor in number_dict.items():
+    print(f"{clave}: {valor}")
